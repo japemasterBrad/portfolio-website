@@ -32,7 +32,6 @@ body {
 }
 
 .bradley_container:hover .bradley_image {
-    /* top: -130px; */
     transition-duration: 0.5s;
     transform: translateY(-60%);
     border-radius: 30px;
