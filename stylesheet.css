@@ -5,7 +5,7 @@ body {
 }
 
 .bradley_container {
-    /* background: linear-gradient(310deg, #39babe, #7fdad2); */
+    /* background-color: red; */
     width: 300px;
     margin-top: 350px;
     margin-left: auto;
@@ -13,22 +13,14 @@ body {
     height: 300px;
     border: 10px #33abaf solid;
     position: relative;
-    border-radius: 150px;
-    transition-duration: 0.5s ease-out;
+    border-radius: 160px;
+    transition: 0.5s ease;
 }
 
 .bradley_container:hover {
     background: linear-gradient(310deg, #39babe, #7fdad2);
-    width: 300px;
-    margin-top: 350px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 300px;
-    border: 10px #33abaf solid;
     border-radius: 0px;
-    opacity: 1;
     transition-duration: 0.5s;
-    
 }
 
 .bradley_container:hover .bradley_image {
@@ -47,8 +39,7 @@ body {
     position: relative;
     top: 20px;
     opacity: 1;
-    
-    /* top: -130px */
+    transition: 0.5s ease;
 }
 
 .name_header {
@@ -56,28 +47,47 @@ body {
     font-weight: 100;
     color: white;
     text-align: center;
+    letter-spacing: 1.5px;
     line-height: 15px;
     position: relative;
     top: -125px;
     opacity: 0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    transition: 0.5s ease-in;
 }
 
 .bradley_container:hover .name_header {
+    transition-duration: 1s;
+    transition-delay: 0.25s;
     opacity: 1;
 }
 
 .hot_links {
     /* background-color: red; */
+    transform: scale(.8);
     display: block;
-    filter: invert(1);
-    width: 70px;
+    width: 204px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: -120px;
+    top: -140px;
     opacity: 0;
 }
 
+.social_logos {
+    padding-left: 10px;
+    padding-right: 10px;
+    transition-duration: 0.5s;
+}
+
+.social_logos:hover {
+    /* background-color: red; */
+    transform: scale(1.2);
+}
+
 .bradley_container:hover .hot_links {
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
     opacity: 1;
 }
