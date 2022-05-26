@@ -5,7 +5,7 @@ body {
 }
 
 .bradley_container {
-    /* background-color: red; */
+    background-color: transparent;
     width: 300px;
     margin-top: 350px;
     margin-left: auto;
@@ -14,12 +14,13 @@ body {
     border: 10px #33abaf solid;
     position: relative;
     border-radius: 160px;
-    transition: 0.5s ease;
+    transition: 0.5s ease-in-out;
 }
 
 .bradley_container:hover {
     background: linear-gradient(310deg, #39babe, #7fdad2);
     border-radius: 0px;
+    transition: 0.5s;
     transition-duration: 0.5s;
 }
 
@@ -30,16 +31,18 @@ body {
 }
 
 .bradley_image {
-    width: 250px;
+    width: 260px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border: 7px white solid;
     border-radius: 150px;
     position: relative;
-    top: 20px;
+    top: 13px;
     opacity: 1;
     transition: 0.5s cubic-bezier(0.7, 0.34, 0.61, 1.43);
+    z-index: 1;
+    
 }
 
 .name_header {
@@ -50,7 +53,7 @@ body {
     letter-spacing: 1.5px;
     line-height: 15px;
     position: relative;
-    top: -135px;
+    top: -145px;
     opacity: 0;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
@@ -58,8 +61,8 @@ body {
 }
 
 .bradley_container:hover .name_header {
-    transition-duration: 1s;
-    transition-delay: 0.25s;
+    transition-duration: 0.5s;
+    transition-delay: 0.35s;
     opacity: 1;
 }
 
@@ -71,8 +74,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: -140px;
+    top: -155px;
     opacity: 0;
+    transition:cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition-duration: 0.25;
 }
 
 .social_logos {
@@ -87,7 +92,7 @@ body {
 }
 
 .bradley_container:hover .hot_links {
-    transition-delay: 0.5s;
+    transition-delay: 0.7s;
     transition-duration: 0.5s;
     opacity: 1;
 }
