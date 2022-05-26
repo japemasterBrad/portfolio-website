@@ -2,7 +2,7 @@ body {
     background-image: linear-gradient(90deg, #3d608b, #76a3db);
 }
 
-#bradley_container {
+.bradley_container {
     /* background: linear-gradient(310deg, #39babe, #7fdad2); */
     width: 300px;
     margin-top: 350px;
@@ -13,10 +13,10 @@ body {
     border-radius: 0px;
     position: relative;
     border-radius: 60px;
-    transition-duration: 0.5s backwards;
+    transition-duration: 0.5s ease-in-out;
 }
 
-#bradley_container:hover {
+.bradley_container:hover {
     background: linear-gradient(310deg, #39babe, #7fdad2);
     width: 300px;
     margin-top: 350px;
@@ -30,13 +30,13 @@ body {
     
 }
 
-#bradley_container:hover #bradley_image {
+.bradley_container:hover .bradley_image {
     /* top: -130px; */
     transition-duration: 0.5s;
     transform: translateY(-60%);
 }
 
-#bradley_image {
+.bradley_image {
     width: 250px;
     display: block;
     margin-left: auto;
@@ -50,7 +50,7 @@ body {
     /* top: -130px */
 }
 
-#name_header {
+.name_header {
     font-family: 'Permanent Marker';
     font-weight: 100;
     color: white;
@@ -61,11 +61,11 @@ body {
     opacity: 0;
 }
 
-#bradley_container:hover #name_header {
+.bradley_container:hover .name_header {
     opacity: 1;
 }
 
-#hot_links {
+.hot_links {
     /* background-color: red; */
     display: block;
     filter: invert(1);
@@ -77,6 +77,6 @@ body {
     opacity: 0;
 }
 
-#bradley_container:hover #hot_links {
+.bradley_container:hover .hot_links {
     opacity: 1;
 }
