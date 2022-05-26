@@ -1,5 +1,7 @@
 body {
-    background-image: linear-gradient(90deg, #3d608b, #76a3db);
+    background-image: linear-gradient(45deg, #3d608b, #76a3db);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .bradley_container {
@@ -10,10 +12,9 @@ body {
     margin-right: auto;
     height: 300px;
     border: 10px #33abaf solid;
-    border-radius: 0px;
     position: relative;
-    border-radius: 60px;
-    transition-duration: 0.5s ease-in-out;
+    border-radius: 150px;
+    transition-duration: 0.5s ease-out;
 }
 
 .bradley_container:hover {
@@ -26,7 +27,7 @@ body {
     border: 10px #33abaf solid;
     border-radius: 0px;
     opacity: 1;
-    transition-duration: border-radius 2s;
+    transition-duration: 0.5s;
     
 }
 
@@ -34,6 +35,7 @@ body {
     /* top: -130px; */
     transition-duration: 0.5s;
     transform: translateY(-60%);
+    border-radius: 30px;
 }
 
 .bradley_image {
@@ -41,8 +43,8 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 5px white solid;
-    border-radius: 40px;
+    border: 7px white solid;
+    border-radius: 150px;
     position: relative;
     top: 20px;
     opacity: 1;
